@@ -1,8 +1,10 @@
 # Hugo Theme Farallon
 
-![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
+![Hugo Theme Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
 
-## 使用方法
+Farallon is a simple single column hugo theme with perfect performace and elegance design.
+
+## Usage
 
 ```
 git submodule add https://github.com/bigfa/hugo-theme-farallon.git themes/farallon
@@ -10,70 +12,192 @@ git submodule add https://github.com/bigfa/hugo-theme-farallon.git themes/farall
 echo "theme = 'farallon'" >> hugo.toml
 ```
 
-## Release Note
+[Full demo site](https://github.com/bigfa/bigfa.github.io)
+
+## Release Notes
+
+### 0.4.9
+
+-   fixed search error
+
+### 0.4.8
+
+-   add cover link
+
+### 0.4.7
+
+-   compatible with the latest version
+
+### 0.4.6
+
+-   add post image zoom
+
+### 0.4.5
+
+-   add cloudflare worker comment system support
+
+### 0.4.4
+
+-   update structure
+
+### 0.4.3
+
+-   change douban api to cloudflare worker
+
+### 0.4.2
+
+-   update action params
+
+### 0.4.1
+
+-   rewrite ts
+
+### 0.4.0
+
+-   add post view in list
+
+### 0.3.9
+
+-   add post view
+
+### 0.3.8
+
+-   add post like btn
+
+### 0.3.7
+
+-   add footer sns icons
+
+### 0.3.6
+
+-   add post category card
+-   add github icon
+
+### 0.3.5
+
+-   add author sns icons
+
+### 0.3.4
+
+-   change category file name
+
+### 0.3.3
+
+-   add post type memo
+
+### 0.3.2
+
+-   add story author card
+
+### 0.3.1
+
+-   add sticky icon
+-   fixed db list style in dark mode
+
+### 0.3.0
+
+-   add search
+
+### 0.2.11
+
+-   add link shortcode
+
+### 0.2.10
+
+-   fixed category list and tag list style
+-   relative time support i18n
+
+### 0.2.9
+
+-   fixed url render error
+-   add friend links template
+
+### 0.2.8
+
+-   add `pre` and `code` style
+
+### 0.2.7
+
+-   refactory taxonomy
+
+### 0.2.6
+
+-   toc style changed
+
+### 0.2.5
+
+-   Fixed ol list style error
+
+### 0.2.4
+
+-   Added a gear template
+
+### 0.2.3
+
+-   Added a “back to top” button.
 
 ### 0.2.2
 
--   增加 TOC 支持
+-   Added support for table of contents (TOC).
 
 ### 0.2.1
 
--   修复 scss 低版本兼容性问题
+-   Fixed compatibility issues with older versions of SCSS.
 
 ### 0.2.0
 
--   增加暗黑模式支持
--   修复移动端 footer 样式问题
+-   Added dark mode support.
+-   Fixed footer style issues on mobile devices.
 
 ### 0.1.0
 
--   添加主题信息
+-   Added theme information.
 
 ### 0.0.8
 
--   修复 safari 浏览器下时间格式化错误的问题
+-   Fixed date formatting issue on Safari browser.
 
 ### 0.0.7
 
--   修改为本地获取条目，无需设置 token
+-   Changed to local item retrieval without the need for a token.
 
 ### 0.0.6
 
--   新增豆瓣条目支持
+-   Added support for Douban items.
 
-使用方法
+Usage:
 
-微信扫码登录https://node.wpista.com/
+Scan the QR code with WeChat at https://node.wpista.com/.
 
-输入你的豆瓣数字 id，点击保存即可自动同步豆瓣记录。
+Enter your Douban numeric ID and click “Save” to automatically sync your Douban records.
 
-点击 Get integration token 会生成一个 token。
+Click “Get integration token” to generate a token.
 
-在你的站点配置中加入参数
+Add the following parameter to your site configuration:
 
 ```
 [params]
-    wpdToken= '上面生成的token'
+wpdToken = 'token generated above'
 ```
 
 ### 0.0.5
 
--   修复分类页/标签页样式错误
+-   Fixed styling issues on category/tag pages.
 
 ### 0.0.4
 
--   增加相对时间
--   加入示例数据
+-   Added relative time display.
+-   Included sample data.
 
 ### 0.0.3
 
--   使用`normalize.css`
+-   Used normalize.css.
 
 ### 0.0.2
 
--   增加菜单设置
--   增加一个是否显示站长信息的参数
+-   Added menu settings.
+-   Added a parameter to control the display of site owner information.
 
 ### 0.0.1
 
-初始化
+-   Initial setup.

@@ -8,26 +8,11 @@
 </header>
 <div class="site--main">
     {{ range .Data.Pages }}
-    <article class="articleItem">
-        {{ if .Params.categories }}
-        <div class="categories">
-            {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-            {{ end }}
-        </div>
-        {{ end}}
-        <h2 class="title">
-            <a href="{{ .Permalink }}">
-                {{ .Title }}
-            </a>
-        </h2>
-        <div class="time">{{ .Date | time.Format ":date_long" }}</div>
-        <div class="tags">
-            {{ range (.GetTerms "tags") }}
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-            {{ end }}
-        </div>
-    </article>
+    {{ if eq .Type "memo" }}
+    {{ partial "memo.html" . }}
+    {{ else }}
+    {{ partial "post.html" . }}
+    {{ end }}
     {{ end }}
 </div>
 {{ end }}
