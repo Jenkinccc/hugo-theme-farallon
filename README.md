@@ -16,6 +16,10 @@ echo "theme = 'farallon'" >> hugo.toml
 
 ## Release Notes
 
+### 0.7.7
+
+-   local search assets
+
 ### 0.7.6
 
 -   add custom pagination

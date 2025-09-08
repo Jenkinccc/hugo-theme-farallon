@@ -14,6 +14,10 @@ echo "theme = 'farallon'" >> hugo.toml
 
 ## Release Note
 
+### 0.7.7
+
+-   本地化搜索
+
 ### 0.7.6
 
 -   增加自定义分页

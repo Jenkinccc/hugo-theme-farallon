@@ -2,7 +2,6 @@ import { farallonHelper } from "./utils";
 import farallonActions from "./action.ts";
 import { farallonComment } from "./comment.ts";
 import Douban from "./db.ts";
-import imgZoom from "./zoom.ts";
 declare global {
     interface Window {
         actionDomain: string;
@@ -15,7 +14,7 @@ class farallonBase extends farallonHelper {
     is_single: boolean = false;
     post_id: number = 0;
     is_archive: boolean = false;
-    VERSION: string = "0.7.6";
+    VERSION: string = "0.7.7";
     like_btn: any;
     selctor: string = ".like-btn";
     actionDomain: string = window.actionDomain;
@@ -171,5 +170,3 @@ new Douban({
     baseAPI: window.dbAPIBase,
     container: ".db--container",
 });
-
-// new imgZoom();
